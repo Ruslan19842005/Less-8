@@ -24,9 +24,18 @@ public class Main {
         }
 
 
-
+        int population = 12000000;
+        int fertilityPerThousand = 17;
+        int mortalityPerThousand = 8;
+        int currentYear = 2025;
+        for (int year = currentYear; year < currentYear + 10; year++) {
+            population += population * fertilityPerThousand / 1000 - population * mortalityPerThousand / 1000;
+            System.out.print(" Год " + year + " численность населения составит " + population);
         }
+
+
     }
+}
 
 
 
