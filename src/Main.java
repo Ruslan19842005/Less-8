@@ -16,11 +16,11 @@ public class Main {
         int number = 0;
         while (number < 10) {
             number++;
-            System.out.print(number + "");
+            System.out.println(number + "");
         }
         System.out.println();
         for (; number >= 1; number--) {
-            System.out.print(number + "");
+            System.out.println(number + "");
         }
 
 
@@ -30,7 +30,7 @@ public class Main {
         int currentYear = 2025;
         for (int year = currentYear; year < currentYear + 10; year++) {
             population += population * fertilityPerThousand / 1000 - population * mortalityPerThousand / 1000;
-            System.out.print(" Год " + year + " численность населения составит " + population);
+            System.out.println(" Год " + year + " численность населения составит " + population);
         }
 
 
